@@ -43,3 +43,16 @@ console.log(b%a)
 console.log(name1 + " " + name2)
 
 
+
+
+if(userName==="admin"){
+ if(userPass==="Ak123"){
+console.log("welcome to the dashboard")
+    }else{
+        console.log("user password is wrong")
+    }
+}
+else{
+    console.log("userName is invalid")
+}
+
