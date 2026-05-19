@@ -157,10 +157,27 @@
 // }
 
 // count();
-function value(name,age){
+// function value(name,age){
     
-    return   "hello",12,true;
+//     return   "hello",12,true;
    
+// }
+
+// console.log(value());
+
+
+// let a=10;
+// var b=30;
+// console.log(a,"a")
+
+function abc(){
+    if(false){
+        return "hello"
+    }
+    else{
+        return "bye"
+    }   
 }
 
-console.log(value())
+
+console.log(abc());
