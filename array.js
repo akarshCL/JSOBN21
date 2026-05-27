@@ -384,3 +384,15 @@ console.log(customSplice(2,2,12,12));
 
 console.log(arr);
 
+// let arr=[1,2,43,4,[3,5,6,6,[6,7,8,8]]]
+// [1,2,43,4,3,5,6,6,6,7,8,8]
+arr=[]
+let simple=[1,2,3,[4,5],[7,89,6]]
+let result=simple.flat();
+// console.log(result,"result")
+// console.log(simple,"simple")
+
+let nested=[1,2,3,[4,5,[6,7,[8,9,0]]],[9,80]]
+let result2=nested.flat(Infinity);
+console.log(result2,"result")
+
