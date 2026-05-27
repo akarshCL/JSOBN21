@@ -387,7 +387,7 @@ console.log(arr);
 // let arr=[1,2,43,4,[3,5,6,6,[6,7,8,8]]]
 // [1,2,43,4,3,5,6,6,6,7,8,8]
 arr=[]
-let simple=[1,2,3,[4,5],[7,89,6]]
+let simple=[1,2,3,["jhg","jhgf"],["hgf",89,6]]
 let result=simple.flat();
 // console.log(result,"result")
 // console.log(simple,"simple")
