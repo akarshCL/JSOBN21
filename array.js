@@ -337,33 +337,50 @@
 // add the element from starting index > given index
 let arr=[1,2,3,4,5,6]
 // 1,2,5,6
-function customSplice(start,deleteCount,...rest){
+let arr = [1,2,3,4,5,6];
 
-let deletedCountData=[];
-let dataToBeAppend=rest;// [12,12,4,5]
-for (let i=start;i<start+deleteCount;i++){
-    deletedCountData.push(arr[i]);
-}
+function customSplice(start, deleteCount, ...rest){
 
-let remainingArray=[];
-for(let i=0;i<start;i++){
-    remainingArray.push(arr[i])
-}
-if(rest.length>0){
-    for(let i=0;i<dataToBeAppend.length;i++){
-        remainingArray.push(dataToBeAppend[i])
+    let deletedItems = [];
+
+    // collect deleted items
+    for(let i = start; i < start + deleteCount; i++) {
+
+        deletedItems.push(arr[i]);
     }
+
+    let updatedArray = [];
+
+    // before start
+    for(let i = 0; i < start; i++) {
+
+        updatedArray.push(arr[i]);
+    }
+
+    // insert new items
+    for(let i = 0; i < rest.length; i++) {
+
+        updatedArray.push(rest[i]);
+    }
+
+    // remaining items
+    for(let i = start + deleteCount; i < arr.length; i++) {
+
+        updatedArray.push(arr[i]);
+    }
+
+    // mutate original array
+    arr.length = 0;
+
+    for(let i = 0; i < updatedArray.length; i++) {
+
+        arr.push(updatedArray[i]);
+    }
+
+    return deletedItems;
 }
 
+console.log(customSplice(2,2,12,12));
 
-for(let i=start+deleteCount;i<arr.length;i++){
-    remainingArray.push(arr[i])
-}
+console.log(arr);
 
-// arr=[]
-arr=remainingArray
-// return remainingArray
-
-}
-
-console.log(customSplice(2,2,12,12,4,5))
