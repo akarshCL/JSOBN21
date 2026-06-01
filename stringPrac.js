@@ -43,13 +43,26 @@ let newstr="a ksgfsd3456knh83et7w";
 // Extract all digits from a string.
 // Replace every space with -.
 // Convert all lowercase letters to uppercase without using toUpperCase().
+
+
 // Convert all uppercase letters to lowercase without using toLowerCase().
+
+
+
+
+
+
 // Count how many times a specific character occurs in a string.
 // Check whether a string contains at least one digit.
 // Check whether a string contains at least one uppercase letter.
 // Reverse a string using a single loop.
 // Check whether a string is a palindrome.
 // Count words in a sentence.
+
+
+
+
+
 // Find the longest sequence of consecutive spaces.
 // Find the total ASCII sum of all characters.
 // Print only characters whose ASCII value is even.
